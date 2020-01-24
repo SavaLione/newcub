@@ -1,6 +1,6 @@
 ################################################################
 #
-#	Субпроекты
+#	Source files
 #
 ################################################################
 
@@ -26,4 +26,10 @@ endif()
 if(NCUB_TEST)
 	add_subdirectory(test/)
 	message(STATUS "	Tests ok.")
+endif()
+
+# Tune
+if(NCUB_TUNE)
+	add_subdirectory(tune/)
+	message(STATUS "	Tune ok.")
 endif()

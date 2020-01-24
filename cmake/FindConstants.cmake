@@ -23,6 +23,7 @@ set(NCUB_LIBRARY 1 CACHE BOOL "New cub library")
 # Examples and test
 set(NCUB_EXAMPLES 0 CACHE BOOL "newcub examples")
 set(NCUB_TEST 0 CACHE BOOL "newcub test")
+set(NCUB_TUNE 0 CACHE BOOL "newcub tune")
 
 if(NCUB_EXAMPLES)
     # block
@@ -121,4 +122,9 @@ if(NCUB_TEST)
 
     set(NCUB_TEST_test_warp_scan 1 CACHE BOOL "test_warp_scan")
     set(NCUB_TEST_test_warp_scan_NAME test_warp_scan)
+endif()
+
+if(NCUB_TUNE)
+    set(NCUB_TUNE_tune_device_reduce 1 CACHE BOOL "tune_device_reduce")
+    set(NCUB_TEST_tune_device_reduce_NAME tune_device_reduce)
 endif()

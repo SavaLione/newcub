@@ -54,3 +54,4 @@ target_include_directories(YourProjectName PUBLIC "${CMAKE_SOURCE_DIR}/lib/newcu
 * ```NCUB_LIBRARY``` (default: ```ON```): Build newcub library
 * ```NCUB_EXAMPLES``` (default: ```OFF```): Examples
 * ```NCUB_TEST``` (default: ```OFF```): Test
+* ```NCUB_TUNE``` (default: ```OFF```): Tune
