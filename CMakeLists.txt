@@ -11,7 +11,8 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
 ################################################################
 # Подключение констант с описанием
 ################################################################
-find_package(Description REQUIRED)
+#find_package(Description REQUIRED)
+include(Description)
 message(STATUS "${NCUB_DESCRIPTION_CONNECT}")
 
 # Вывод логотипа
@@ -20,24 +21,29 @@ message(STATUS "${NCUB_DESCRIPTION_LOGO}")
 ################################################################
 # Подключение констант проекта
 ################################################################
-find_package(Constants REQUIRED)
+#find_package(Constants REQUIRED)
+include(Constants)
 
 ################################################################
 # Подключение библиотек
 ################################################################
-find_package(Lib REQUIRED)
+#find_package(Lib REQUIRED)
+include(Lib)
 
 ################################################################
 # Подключение субпроектов
 ################################################################
-find_package(Src REQUIRED)
+#find_package(Src REQUIRED)
+include(Src)
 
 ################################################################
 # Параметры сборки
 ################################################################
-find_package(Build REQUIRED)
+#find_package(Build REQUIRED)
+include(Build)
 
 ################################################################
 # Параметры компилятора
 ################################################################
-find_package(Compiler REQUIRED)
+#find_package(Compiler REQUIRED)
+include(Compiler)
