@@ -6,59 +6,9 @@ project(${NCUB_NAME})
 
 ################################################################
 #
-#	Константы с описанием
-#
-################################################################
-
-# Логотип
-################################################################
-# new cub
-################################################################
-set(NCUB_DESCRIPTION_LOGO "new cub")
-
-# Подключение описания
-set(NCUB_DESCRIPTION_CONNECT "Подключение описания")
-
-# Подключение констант проекта
-set(NCUB_DESCRIPTION_CONNECT_CONSTANTS "Подключение констант проекта")
-
-# Подключение параметров сборки
-set(NCUB_DESCRIPTION_CONNECT_BUILD "Подключение параметров сборки")
-
-# Подключение параметров компилятора
-set(NCUB_DESCRIPTION_CONNECT_COMPILER "Подключение параметров компилятора")
-
-# Подключение библиотек
-set(NCUB_DESCRIPTION_CONNECT_LIB "Подключение библиотек")
-
-# Подключение субпроектов
-set(NCUB_DESCRIPTION_CONNECT_SUB "Подключение субпроектов")
-
-# Подключение проверки возможностей целевой машины
-set(NCUB_DESCRIPTION_CONNECT_OPP "Подключение проверки возможностей целевой машины")
-
-# Компиляция под Visual Studio (Windows)
-set(NCUB_DESCRIPTION_COMPILER_VC "Компиляция под Visual Studio (Windows)")
-
-# Компиляция под MinGW (Windows)
-set(NCUB_DESCRIPTION_COMPILER_MINGW "Компиляция под MinGW (Windows)")
-
-# Компиляция под GCC (Linux)
-set(NCUB_DESCRIPTION_COMPILER_GCC "Компиляция под GCC (Linux)")
-
-
-message(STATUS "${NCUB_DESCRIPTION_CONNECT}")
-
-# Вывод логотипа
-message(STATUS "${NCUB_DESCRIPTION_LOGO}")
-
-################################################################
-#
 #	Константы проекта
 #
 ################################################################
-
-message(STATUS "${NCUB_DESCRIPTION_CONNECT_CONSTANTS}")
 
 set(NCUB_CONSTANTS 1)
 
@@ -189,12 +139,9 @@ endif()
 #
 ################################################################
 
-message(STATUS ${NCUB_DESCRIPTION_CONNECT_SUB})
-
 # Библиотека newmoderngpu
 if(NCUB_LIBRARY)
 	add_subdirectory(src/)
-	message(STATUS "	New cub ok.")
 endif()
 
 ################################################################
@@ -204,17 +151,14 @@ endif()
 # Examples
 if(NCUB_EXAMPLES)
 	add_subdirectory(examples/)
-	message(STATUS "	Examples ok.")
 endif()
 
 # Tests
 if(NCUB_TEST)
 	add_subdirectory(test/)
-	message(STATUS "	Tests ok.")
 endif()
 
 # Tune
 if(NCUB_TUNE)
 	add_subdirectory(tune/)
-	message(STATUS "	Tune ok.")
 endif()
