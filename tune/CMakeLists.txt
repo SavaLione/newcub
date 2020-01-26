@@ -4,7 +4,10 @@
 #
 ################################################################
 
+link_libraries(${NCUB_NAME})
+
 include_directories(${PROJECT_SOURCE_DIR}/assets)
+include_directories(${PROJECT_SOURCE_DIR}/include)
 
 ################################################################
 # link
@@ -12,6 +15,4 @@ include_directories(${PROJECT_SOURCE_DIR}/assets)
 if(NCUB_TUNE_tune_device_reduce)
     project(${NCUB_TUNE_tune_device_reduce_NAME})
     add_executable(${NCUB_TUNE_tune_device_reduce_NAME} tune_device_reduce.cu)
-    target_link_libraries(${NCUB_TUNE_tune_device_reduce_NAME} ${NCUB_NAME})
-    target_include_directories(${NCUB_TUNE_tune_device_reduce_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
 endif()

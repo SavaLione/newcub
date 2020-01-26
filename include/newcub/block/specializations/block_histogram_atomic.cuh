@@ -1,4 +1,6 @@
 /*
+ * Copyright (c) 2011, Duane Merrill
+ * Copyright (c) 2011-2018, NVIDIA CORPORATION
  * Copyright (c) 2020 Savely Pototsky (SavaLione)
  * All rights reserved.
  *
@@ -26,14 +28,58 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-#include <newcub/cub.cuh>
 
-void b()
+/**
+ * \file
+ * The cub::BlockHistogramAtomic class provides atomic-based methods for constructing block-wide histograms from data samples partitioned across a CUDA thread block.
+ */
+
+#pragma once
+
+#include <newcub/util_namespace.cuh>
+
+/// Optional outer namespace(s)
+CUB_NS_PREFIX
+
+/// CUB namespace
+namespace cub {
+
+
+/**
+ * \brief The BlockHistogramAtomic class provides atomic-based methods for constructing block-wide histograms from data samples partitioned across a CUDA thread block.
+ */
+template <int BINS>
+struct BlockHistogramAtomic
 {
-    printf("b() called\n");
+    /// Shared memory storage layout type
+    struct TempStorage {};
 
-    cub::DoubleBuffer<unsigned int>     d_keys;
-    cub::DoubleBuffer<cub::NullType>    d_values;
-    size_t                              temp_storage_bytes = 0;
-    cub::DeviceRadixSort::SortPairs(NULL, temp_storage_bytes, d_keys, d_values, 1024);
-}
+
+    /// Constructor
+    __device__ __forceinline__ BlockHistogramAtomic(
+        TempStorage &temp_storage)
+    {}
+
+
+    /// Composite data onto an existing histogram
+    template <
+        typename            T,
+        typename            CounterT,     
+        int                 ITEMS_PER_THREAD>
+    __device__ __forceinline__ void Composite(
+        T                   (&items)[ITEMS_PER_THREAD],     ///< [in] Calling thread's input values to histogram
+        CounterT             histogram[BINS])                 ///< [out] Reference to shared/device-accessible memory histogram
+    {
+        // Update histogram
+        #pragma unroll
+        for (int i = 0; i < ITEMS_PER_THREAD; ++i)
+        {
+              atomicAdd(histogram + items[i], 1);
+        }
+    }
+
+};
+
+}               // CUB namespace
+CUB_NS_POSTFIX  // Optional outer namespace(s)
+
