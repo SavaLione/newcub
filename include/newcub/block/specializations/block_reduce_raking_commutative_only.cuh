@@ -36,7 +36,7 @@
 
 #pragma once
 
-#include <newcub/block/specilizations/block_reduce_raking.cuh>
+#include <newcub/block/specializations/block_reduce_raking.cuh>
 #include <newcub/warp/warp_reduce.cuh>
 #include <newcub/thread/thread_reduce.cuh>
 #include <newcub/util_ptx.cuh>

@@ -50,14 +50,14 @@
 #include <iostream>
 #include <limits>
 
-#include <newcub/mersenne.h>
-#include <newcub/half.h>
+#include "mersenne.h"
+#include "half.h"
 
-#include <newcub/cub/util_debug.cuh>
-#include <newcub/cub/util_device.cuh>
-#include <newcub/cub/util_type.cuh>
-#include <newcub/cub/util_macro.cuh>
-#include <newcub/cub/iterator/discard_output_iterator.cuh>
+#include <newcub/util_debug.cuh>
+#include <newcub/util_device.cuh>
+#include <newcub/util_type.cuh>
+#include <newcub/util_macro.cuh>
+#include <newcub/iterator/discard_output_iterator.cuh>
 
 
 /******************************************************************************
