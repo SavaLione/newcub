@@ -34,7 +34,8 @@
  * The cub::BlockHistogramSort class provides sorting-based methods for constructing block-wide histograms from data samples partitioned across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_HISTOGRAM_SORT_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_HISTOGRAM_SORT_CUH
 
 #include <newcub/block/block_radix_sort.cuh>
 #include <newcub/block/block_discontinuity.cuh>
@@ -227,3 +228,4 @@ struct BlockHistogramSort
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_HISTOGRAM_SORT_CUH

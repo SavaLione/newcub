@@ -34,7 +34,8 @@
  * cub::AgentHistogram implements a stateful abstraction of CUDA thread blocks for participating in device-wide histogram .
  */
 
-#pragma once
+#ifndef NEWCUB_AGENT_AGENT_HISTOGRAM_CUH
+#define NEWCUB_AGENT_AGENT_HISTOGRAM_CUH
 
 #include <iterator>
 
@@ -788,3 +789,4 @@ struct AgentHistogram
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_AGENT_AGENT_HISTOGRAM_CUH

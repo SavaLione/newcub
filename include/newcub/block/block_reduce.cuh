@@ -34,7 +34,8 @@
  * The cub::BlockReduce class provides [<em>collective</em>](index.html#sec0) methods for computing a parallel reduction of items partitioned across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_REDUCE_CUH
+#define NEWCUB_BLOCK_BLOCK_REDUCE_CUH
 
 #include <newcub/block/specializations/block_reduce_raking.cuh>
 #include <newcub/block/specializations/block_reduce_raking_commutative_only.cuh>
@@ -608,3 +609,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_REDUCE_CUH

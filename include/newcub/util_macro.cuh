@@ -33,7 +33,8 @@
  * Common C/C++ macro utilities
  ******************************************************************************/
 
-#pragma once
+#ifndef NEWCUB_UTIL_MACRO_CUH
+#define NEWCUB_UTIL_MACRO_CUH
 
 #include <newcub/util_namespace.cuh>
 
@@ -104,3 +105,5 @@ namespace cub {
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_UTIL_MACRO_CUH

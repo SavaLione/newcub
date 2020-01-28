@@ -35,7 +35,8 @@
  */
 
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_RADIX_SORT_CUH
+#define NEWCUB_BLOCK_BLOCK_RADIX_SORT_CUH
 
 #include <newcub/block/block_exchange.cuh>
 #include <newcub/block/block_radix_rank.cuh>
@@ -864,3 +865,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_RADIX_SORT_CUH

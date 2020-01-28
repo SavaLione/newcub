@@ -35,7 +35,8 @@
  */
 
 
-#pragma once
+#ifndef NEWCUB_GRID_GRID_EVEN_SHARE_CUH
+#define NEWCUB_GRID_GRID_EVEN_SHARE_CUH
 
 #include <newcub/util_namespace.cuh>
 #include <newcub/util_macro.cuh>
@@ -223,3 +224,5 @@ public:
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_GRID_GRID_EVEN_SHARE_CUH

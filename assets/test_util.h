@@ -29,7 +29,8 @@
  * SUCH DAMAGE.
  */
 
-#pragma once
+#ifndef ASSETS_TEST_UTIL_H
+#define ASSETS_TEST_UTIL_H
 
 #if defined(_WIN32) || defined(_WIN64)
     #include <windows.h>
@@ -1628,3 +1629,5 @@ struct GpuTimer
         return elapsed;
     }
 };
+
+#endif // ASSETS_TEST_UTIL_H

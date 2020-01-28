@@ -34,7 +34,8 @@
  * cub::BlockReduceWarpReductions provides variants of warp-reduction-based parallel reduction across a CUDA thread block.  Supports non-commutative reduction operators.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_REDUCE_WARP_REDUCTIONS_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_REDUCE_WARP_REDUCTIONS_CUH
 
 #include <newcub/warp/warp_reduce.cuh>
 #include <newcub/util_ptx.cuh>
@@ -219,3 +220,4 @@ struct BlockReduceWarpReductions
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_REDUCE_WARP_REDUCTIONS_CUH

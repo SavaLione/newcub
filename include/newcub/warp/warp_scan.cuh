@@ -34,7 +34,8 @@
  * The cub::WarpScan class provides [<em>collective</em>](index.html#sec0) methods for computing a parallel prefix scan of items partitioned across a CUDA thread warp.
  */
 
-#pragma once
+#ifndef NEWCUB_WARP_SCAN_CUH
+#define NEWCUB_WARP_SCAN_CUH
 
 #include <newcub/warp/specializations/warp_scan_shfl.cuh>
 #include <newcub/warp/specializations/warp_scan_smem.cuh>
@@ -937,3 +938,5 @@ public:
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_WARP_SCAN_CUH

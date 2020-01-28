@@ -34,7 +34,8 @@
  * Random-access iterator types
  */
 
-#pragma once
+#ifndef NEWCUB_ITERATOR_CACHE_MODIFIED_INPUT_ITERATOR_CUH
+#define NEWCUB_ITERATOR_CACHE_MODIFIED_INPUT_ITERATOR_CUH
 
 #include <iterator>
 #include <iostream>
@@ -241,3 +242,5 @@ public:
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_ITERATOR_CACHE_MODIFIED_INPUT_ITERATOR_CUH

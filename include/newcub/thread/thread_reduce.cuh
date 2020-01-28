@@ -34,7 +34,8 @@
  * Thread utilities for sequential reduction over statically-sized array types
  */
 
-#pragma once
+#ifndef NEWCUB_THREAD_THREAD_REDUCE_CUH
+#define NEWCUB_THREAD_THREAD_REDUCE_CUH
 
 #include <newcub/thread/thread_operators.cuh>
 #include <newcub/util_namespace.cuh>
@@ -153,3 +154,5 @@ __device__ __forceinline__ T ThreadReduce(
 }               // internal namespace
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_THREAD_THREAD_REDUCE_CUH

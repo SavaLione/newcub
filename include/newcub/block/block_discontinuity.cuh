@@ -34,7 +34,8 @@
  * The cub::BlockDiscontinuity class provides [<em>collective</em>](index.html#sec0) methods for flagging discontinuities within an ordered set of items partitioned across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_DISCONTINUITY_CUH
+#define NEWCUB_BLOCK_BLOCK_DISCONTINUITY_CUH
 
 #include <newcub/util_type.cuh>
 #include <newcub/util_ptx.cuh>
@@ -1149,3 +1150,5 @@ public:
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_BLOCK_BLOCK_DISCONTINUITY_CUH

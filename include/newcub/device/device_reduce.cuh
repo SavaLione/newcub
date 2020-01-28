@@ -34,7 +34,8 @@
  * cub::DeviceReduce provides device-wide, parallel operations for computing a reduction across a sequence of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DEVICE_REDUCE_CUH
+#define NEWCUB_DEVICE_DEVICE_REDUCE_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -733,4 +734,4 @@ struct DeviceReduce
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DEVICE_REDUCE_CUH

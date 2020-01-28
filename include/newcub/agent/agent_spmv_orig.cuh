@@ -34,7 +34,8 @@
  * cub::AgentSpmv implements a stateful abstraction of CUDA thread blocks for participating in device-wide SpMV.
  */
 
-#pragma once
+#ifndef NEWCUB_AGENT_AGENT_SPMV_ORIG_CUH
+#define NEWCUB_AGENT_AGENT_SPMV_ORIG_CUH
 
 #include <iterator>
 
@@ -671,3 +672,4 @@ struct AgentSpmv
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_AGENT_AGENT_SPMV_ORIG_CUH

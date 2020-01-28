@@ -34,7 +34,8 @@
  * Place-holder for prefixing the cub namespace
  */
 
-#pragma once
+#ifndef NEWCUB_UTIL_NAMESPACE_CUH
+#define NEWCUB_UTIL_NAMESPACE_CUH
 
 // For example:
 //#define CUB_NS_PREFIX namespace thrust{ namespace detail {
@@ -47,3 +48,5 @@
 #ifndef CUB_NS_POSTFIX
 #define CUB_NS_POSTFIX
 #endif
+
+#endif // NEWCUB_UTIL_NAMESPACE_CUH

@@ -34,7 +34,8 @@
  * The cub::BlockHistogramAtomic class provides atomic-based methods for constructing block-wide histograms from data samples partitioned across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_HISTOGRAM_ATOMIC_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_HISTOGRAM_ATOMIC_CUH
 
 #include <newcub/util_namespace.cuh>
 
@@ -83,3 +84,4 @@ struct BlockHistogramAtomic
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_HISTOGRAM_ATOMIC_CUH

@@ -34,7 +34,8 @@
  * cub::DeviceRunLengthEncode provides device-wide, parallel operations for computing a run-length encoding across a sequence of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DEVICE_RUN_LENGTH_ENCODE_CUH
+#define NEWCUB_DEVICE_DEVICE_RUN_LENGTH_ENCODE_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -277,4 +278,4 @@ struct DeviceRunLengthEncode
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DEVICE_RUN_LENGTH_ENCODE_CUH

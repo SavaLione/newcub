@@ -38,7 +38,8 @@
  * Simple functor operators
  ******************************************************************************/
 
-#pragma once
+#ifndef NEWCUB_THREAD_THREAD_OPERATORS_CUH
+#define NEWCUB_THREAD_THREAD_OPERATORS_CUH
 
 #include <newcub/util_macro.cuh>
 #include <newcub/util_type.cuh>
@@ -318,3 +319,5 @@ struct ReduceByKeyOp
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_THREAD_THREAD_OPERATORS_CUH

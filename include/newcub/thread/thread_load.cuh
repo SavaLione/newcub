@@ -34,7 +34,8 @@
  * Thread utilities for reading memory using PTX cache modifiers.
  */
 
-#pragma once
+#ifndef NEWCUB_THREAD_THREAD_LOAD_CUH
+#define NEWCUB_THREAD_THREAD_LOAD_CUH
 
 #include <cuda.h>
 
@@ -439,3 +440,5 @@ __device__ __forceinline__ typename std::iterator_traits<InputIteratorT>::value_
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_THREAD_THREAD_LOAD_CUH

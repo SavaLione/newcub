@@ -34,7 +34,8 @@
  * cub::DeviceScan provides device-wide, parallel operations for computing a prefix scan across a sequence of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DISPATCH_DISPATCH_SCAN_CUH
+#define NEWCUB_DEVICE_DISPATCH_DISPATCH_SCAN_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -562,4 +563,4 @@ struct DispatchScan
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DISPATCH_DISPATCH_SCAN_CUH

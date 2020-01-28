@@ -34,7 +34,8 @@
  * cub::DeviceSelect provides device-wide, parallel operations for compacting selected items from sequences of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DEVICE_SELECT_CUH
+#define NEWCUB_DEVICE_DEVICE_SELECT_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -368,4 +369,4 @@ struct DeviceSelect
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DEVICE_SELECT_CUH

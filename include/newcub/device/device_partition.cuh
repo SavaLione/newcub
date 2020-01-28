@@ -34,7 +34,8 @@
  * cub::DevicePartition provides device-wide, parallel operations for partitioning sequences of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DEVICE_PARTITION_CUH
+#define NEWCUB_DEVICE_DEVICE_PARTITION_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -272,4 +273,4 @@ struct DevicePartition
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DEVICE_PARTITION_CUH

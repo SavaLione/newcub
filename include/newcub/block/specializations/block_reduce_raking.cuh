@@ -34,7 +34,8 @@
  * cub::BlockReduceRaking provides raking-based methods of parallel reduction across a CUDA thread block.  Supports non-commutative reduction operators.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_RAKING_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_RAKING_CUH
 
 #include <newcub/block/block_raking_layout.cuh>
 #include <newcub/warp/warp_reduce.cuh>
@@ -227,3 +228,4 @@ struct BlockReduceRaking
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_RAKING_CUH

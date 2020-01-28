@@ -34,7 +34,8 @@
  * Thread utilities for sequential search
  */
 
-#pragma once
+#ifndef NEWCUB_THREAD_THREAD_SEARCH_CUH
+#define NEWCUB_THREAD_THREAD_SEARCH_CUH
 
 #include <newcub/util_namespace.cuh>
 
@@ -155,3 +156,5 @@ __device__ __forceinline__ OffsetT UpperBound(
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_THREAD_THREAD_SEARCH_CUH

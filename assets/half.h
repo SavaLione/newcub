@@ -28,7 +28,8 @@
  * SUCH DAMAGE.
  */
 
-#pragma once
+#ifndef ASSETS_HALF_H
+#define ASSETS_HALF_H
 
 /**
  * \file
@@ -307,3 +308,4 @@ struct cub::FpLimits<half_t>
 
 template <> struct cub::NumericTraits<half_t> : cub::BaseTraits<FLOATING_POINT, true, false, unsigned short, half_t> {};
 
+#endif // ASSETS_HALF_H

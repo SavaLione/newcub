@@ -34,7 +34,8 @@
  * cub::GridMappingStrategy enumerates alternative strategies for mapping constant-sized tiles of device-wide data onto a grid of CUDA thread blocks.
  */
 
-#pragma once
+#ifndef NEWCUB_GRID_GRID_MAPPING_CUH
+#define NEWCUB_GRID_GRID_MAPPING_CUH
 
 #include <newcub/util_namespace.cuh>
 
@@ -114,3 +115,4 @@ enum GridMappingStrategy
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_GRID_GRID_MAPPING_CUH

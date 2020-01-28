@@ -35,7 +35,8 @@
  * cub::BlockScanRaking provides variants of raking-based parallel prefix scan across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_SCAN_RAKING_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_SCAN_RAKING_CUH
 
 #include <newcub/util_ptx.cuh>
 #include <newcub/util_arch.cuh>
@@ -667,3 +668,4 @@ struct BlockScanRaking
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_SCAN_RAKING_CUH

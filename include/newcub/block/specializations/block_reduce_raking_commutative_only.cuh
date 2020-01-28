@@ -34,7 +34,8 @@
  * cub::BlockReduceRakingCommutativeOnly provides raking-based methods of parallel reduction across a CUDA thread block.  Does not support non-commutative reduction operators.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_REDUCE_RAKING_COMMUTATIVE_ONLY_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_REDUCE_RAKING_COMMUTATIVE_ONLY_CUH
 
 #include <newcub/block/specializations/block_reduce_raking.cuh>
 #include <newcub/warp/warp_reduce.cuh>
@@ -200,3 +201,4 @@ struct BlockReduceRakingCommutativeOnly
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_REDUCE_RAKING_COMMUTATIVE_ONLY_CUH

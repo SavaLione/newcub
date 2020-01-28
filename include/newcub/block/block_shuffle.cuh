@@ -34,7 +34,8 @@
  * The cub::BlockShuffle class provides [<em>collective</em>](index.html#sec0) methods for shuffling data partitioned across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_SHUFFLE_CUH
+#define NEWCUB_BLOCK_BLOCK_SHUFFLE_CUH
 
 #include <newcub/util_arch.cuh>
 #include <newcub/util_ptx.cuh>
@@ -306,3 +307,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_SHUFFLE_CUH

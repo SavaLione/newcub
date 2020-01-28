@@ -34,7 +34,8 @@
  * cub::BlockScanWarpscans provides warpscan-based variants of parallel prefix scan across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_SCAN_WARP_SCANS3_CUH
+#define NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_SCAN_WARP_SCANS3_CUH
 
 #include <newcub/util_arch.cuh>
 #include <newcub/util_ptx.cuh>
@@ -419,3 +420,4 @@ struct BlockScanWarpScans
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_SPECIALIZATIONS_BLOCK_SCAN_WARP_SCANS3_CUH

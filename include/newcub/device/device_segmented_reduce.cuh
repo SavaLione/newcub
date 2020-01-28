@@ -34,7 +34,8 @@
  * cub::DeviceSegmentedReduce provides device-wide, parallel operations for computing a batched reduction across multiple sequences of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DEVICE_SEGMENTED_REDUCE_CUH
+#define NEWCUB_DEVICE_DEVICE_SEGMENTED_REDUCE_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -618,4 +619,4 @@ struct DeviceSegmentedReduce
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DEVICE_SEGMENTED_REDUCE_CUH

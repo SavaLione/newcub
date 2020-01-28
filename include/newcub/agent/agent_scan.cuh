@@ -34,7 +34,8 @@
  * cub::AgentScan implements a stateful abstraction of CUDA thread blocks for participating in device-wide prefix scan .
  */
 
-#pragma once
+#ifndef NEWCUB_AGENT_AGENT_SCAN_H
+#define NEWCUB_AGENT_AGENT_SCAN_H
 
 #include <iterator>
 
@@ -472,3 +473,4 @@ struct AgentScan
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_AGENT_AGENT_SCAN_H

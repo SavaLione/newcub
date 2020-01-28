@@ -34,8 +34,8 @@
  * Simple portable mutex
  */
 
-
-#pragma once
+#ifndef NEWCUB_HOST_MUTEX_CUH
+#define NEWCUB_HOST_MUTEX_CUH
 
 #if (__cplusplus > 199711L) || (defined(_MSC_VER) && _MSC_VER >= 1800)
     #include <mutex>
@@ -172,3 +172,4 @@ struct Mutex
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_HOST_MUTEX_CUH

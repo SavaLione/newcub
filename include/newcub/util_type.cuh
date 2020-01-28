@@ -34,7 +34,8 @@
  * Common type manipulation (metaprogramming) utilities
  */
 
-#pragma once
+#ifndef NEWCUB_UTIL_TYPE_CUH
+#define NEWCUB_UTIL_TYPE_CUH
 
 #include <iostream>
 #include <limits>
@@ -1168,3 +1169,5 @@ struct Traits : NumericTraits<typename RemoveQualifiers<T>::Type> {};
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_UTIL_TYPE_CUH

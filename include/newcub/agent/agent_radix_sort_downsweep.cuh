@@ -34,8 +34,8 @@
  * AgentRadixSortDownsweep implements a stateful abstraction of CUDA thread blocks for participating in device-wide radix sort downsweep .
  */
 
-
-#pragma once
+#ifndef NEWCUB_AGENT_AGENT_RADIX_SORT_DOWNSWEEP_CUH
+#define NEWCUB_AGENT_AGENT_RADIX_SORT_DOWNSWEEP_CUH
 
 #include <stdint.h>
 
@@ -790,3 +790,4 @@ struct AgentRadixSortDownsweep
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_AGENT_AGENT_RADIX_SORT_DOWNSWEEP_CUH

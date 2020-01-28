@@ -34,7 +34,8 @@
  * Operations for writing linear segments of data from the CUDA thread block
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_STORE_CUH
+#define NEWCUB_BLOCK_BLOCK_STORE_CUH
 
 #include <iterator>
 
@@ -1001,3 +1002,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_STORE_CUH

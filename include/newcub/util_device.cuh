@@ -34,7 +34,8 @@
  * Properties of a given CUDA device and the corresponding PTX bundle
  */
 
-#pragma once
+#ifndef NEWCUB_UTIL_DEVICE_CUH
+#define NEWCUB_UTIL_DEVICE_CUH
 
 #include <newcub/util_type.cuh>
 #include <newcub/util_arch.cuh>
@@ -348,3 +349,5 @@ struct ChainedPolicy<PTX_VERSION, PolicyT, PolicyT>
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_UTIL_DEVICE_CUH

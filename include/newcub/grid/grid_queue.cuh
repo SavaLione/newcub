@@ -34,7 +34,8 @@
  * cub::GridQueue is a descriptor utility for dynamic queue management.
  */
 
-#pragma once
+#ifndef NEWCUB_GRID_GRID_QUEUE_CUH
+#define NEWCUB_GRID_GRID_QUEUE_CUH
 
 #include <newcub/util_namespace.cuh>
 #include <newcub/util_debug.cuh>
@@ -220,4 +221,4 @@ __global__ void FillAndResetDrainKernel(
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_GRID_GRID_QUEUE_CUH

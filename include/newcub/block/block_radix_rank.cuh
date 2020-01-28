@@ -34,7 +34,8 @@
  * cub::BlockRadixRank provides operations for ranking unsigned integer types within a CUDA thread block
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_RADIX_RANK_CUH
+#define NEWCUB_BLOCK_BLOCK_RADIX_RANK_CUH
 
 #include <stdint.h>
 
@@ -696,4 +697,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_BLOCK_BLOCK_RADIX_RANK_CUH

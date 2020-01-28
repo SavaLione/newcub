@@ -34,7 +34,8 @@
  * The cub::BlockScan class provides [<em>collective</em>](index.html#sec0) methods for computing a parallel prefix sum/scan of items partitioned across a CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_SCAN_CUH
+#define NEWCUB_BLOCK_BLOCK_SCAN_CUH
 
 #include <newcub/block/specializations/block_scan_raking.cuh>
 #include <newcub/block/specializations/block_scan_warp_scans.cuh>
@@ -2127,3 +2128,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_SCAN_CUH

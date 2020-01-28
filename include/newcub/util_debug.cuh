@@ -37,7 +37,8 @@
  * - \p CUB_LOG.  Simple event messages are printed to \p stdout.
  */
 
-#pragma once
+#ifndef NEWCUB_UTIL_DEBUG_CUH
+#define NEWCUB_UTIL_DEBUG_CUH
 
 #include <stdio.h>
 #include <newcub/util_namespace.cuh>
@@ -146,3 +147,5 @@ __host__ __device__ __forceinline__ cudaError_t Debug(
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_UTIL_DEBUG_CUH

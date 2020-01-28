@@ -34,7 +34,8 @@
  * cub::DeviceHistogram provides device-wide parallel operations for constructing histogram(s) from a sequence of samples data residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DEVICE_HISTOGRAM_CUH
+#define NEWCUB_DEVICE_DEVICE_HISTOGRAM_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -865,4 +866,4 @@ struct DeviceHistogram
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DEVICE_HISTOGRAM_CUH

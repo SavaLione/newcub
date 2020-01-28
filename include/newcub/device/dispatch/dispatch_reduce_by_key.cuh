@@ -34,7 +34,8 @@
  * cub::DeviceReduceByKey provides device-wide, parallel operations for reducing segments of values residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DISPATCH_DISPATCH_REDUCE_BY_KEY_CUH
+#define NEWCUB_DEVICE_DISPATCH_DISPATCH_REDUCE_BY_KEY_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -553,4 +554,4 @@ struct DispatchReduceByKey
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DISPATCH_DISPATCH_REDUCE_BY_KEY_CUH

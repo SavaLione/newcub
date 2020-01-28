@@ -34,7 +34,8 @@
  * cub::AgentSelectIf implements a stateful abstraction of CUDA thread blocks for participating in device-wide select.
  */
 
-#pragma once
+#ifndef NEWCUB_AGENT_AGENT_SELECT_IF_CUH
+#define NEWCUB_AGENT_AGENT_SELECT_IF_CUH
 
 #include <iterator>
 
@@ -704,3 +705,4 @@ struct AgentSelectIf
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_AGENT_AGENT_SELECT_IF_CUH

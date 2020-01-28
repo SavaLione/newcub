@@ -34,7 +34,8 @@
  * Thread utilities for writing memory using PTX cache modifiers.
  */
 
-#pragma once
+#ifndef NEWCUB_THREAD_THREAD_STORE_CUH
+#define NEWCUB_THREAD_THREAD_STORE_CUH
 
 #include <cuda.h>
 
@@ -423,3 +424,5 @@ __device__ __forceinline__ void ThreadStore(OutputIteratorT itr, T val)
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_THREAD_THREAD_STORE_CUH

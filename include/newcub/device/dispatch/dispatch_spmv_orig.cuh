@@ -34,7 +34,8 @@
  * cub::DeviceSpmv provides device-wide parallel operations for performing sparse-matrix * vector multiplication (SpMV).
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DISPATCH_DISPATCH_SPMV_ORIG_CUH
+#define NEWCUB_DEVICE_DISPATCH_DISPATCH_SPMV_ORIG_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -833,4 +834,4 @@ struct DispatchSpmv
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DISPATCH_DISPATCH_SPMV_ORIG_CUH

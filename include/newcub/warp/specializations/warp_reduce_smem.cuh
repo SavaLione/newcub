@@ -34,7 +34,8 @@
  * cub::WarpReduceSmem provides smem-based variants of parallel reduction of items partitioned across a CUDA thread warp.
  */
 
-#pragma once
+#ifndef NEWCUB_WARP_SPETIALIZATIONS_WARP_REDUCE_SMEM_CUH
+#define NEWCUB_WARP_SPETIALIZATIONS_WARP_REDUCE_SMEM_CUH
 
 #include <newcub/thread/thread_operators.cuh>
 #include <newcub/thread/thread_load.cuh>
@@ -373,3 +374,5 @@ struct WarpReduceSmem
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_WARP_SPETIALIZATIONS_WARP_REDUCE_SMEM_CUH

@@ -34,7 +34,9 @@
  * cub::DeviceRle provides device-wide, parallel operations for run-length-encoding sequences of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DISPATCH_DISPATCH_RLE_CUH
+#define NEWCUB_DEVICE_DISPATCH_DISPATCH_RLE_CUH
+ 
 
 #include <stdio.h>
 #include <iterator>
@@ -537,4 +539,4 @@ struct DeviceRleDispatch
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DISPATCH_DISPATCH_RLE_CUH

@@ -34,8 +34,8 @@
  * PTX intrinsics
  */
 
-
-#pragma once
+#ifndef NEWCUB_UTIL_PTX_CUH
+#define NEWCUB_UTIL_PTX_CUH
 
 #include <newcub/util_type.cuh>
 #include <newcub/util_arch.cuh>
@@ -759,3 +759,5 @@ inline __device__ unsigned int MatchAny(unsigned int label)
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_UTIL_PTX_CUH

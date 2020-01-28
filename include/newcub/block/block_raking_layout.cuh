@@ -34,8 +34,8 @@
  * cub::BlockRakingLayout provides a conflict-free shared memory layout abstraction for warp-raking across thread block data.
  */
 
-
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_RAKING_LAYOUT_CUH
+#define NEWCUB_BLOCK_BLOCK_RAKING_LAYOUT_CUH
 
 #include <newcub/util_macro.cuh>
 #include <newcub/util_arch.cuh>
@@ -153,3 +153,4 @@ struct BlockRakingLayout
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_RAKING_LAYOUT_CUH

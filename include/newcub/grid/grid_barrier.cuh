@@ -34,7 +34,8 @@
  * cub::GridBarrier implements a software global barrier among thread blocks within a CUDA grid
  */
 
-#pragma once
+#ifndef NEWCUB_GRID_GRID_BARRIER_CUH
+#define NEWCUB_GRID_GRID_BARRIER_CUH
 
 #include <newcub/util_debug.cuh>
 #include <newcub/util_namespace.cuh>
@@ -212,3 +213,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_GRID_GRID_BARRIER_CUH

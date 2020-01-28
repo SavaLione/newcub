@@ -34,7 +34,8 @@
  * The cub::WarpReduce class provides [<em>collective</em>](index.html#sec0) methods for computing a parallel reduction of items partitioned across a CUDA thread warp.
  */
 
-#pragma once
+#ifndef NEWCUB_WARP_REDUCE_CUH
+#define NEWCUB_WARP_REDUCE_CUH
 
 #include <newcub/warp/specializations/warp_reduce_shfl.cuh>
 #include <newcub/warp/specializations/warp_reduce_smem.cuh>
@@ -613,3 +614,5 @@ public:
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_WARP_REDUCE_CUH

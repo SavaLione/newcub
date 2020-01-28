@@ -34,7 +34,8 @@
  * cub::DeviceRadixSort provides device-wide, parallel operations for computing a radix sort across a sequence of data items residing within device-accessible memory.
  */
 
-#pragma once
+#ifndef NEWCUB_DEVICE_DISPATCH_DISPATCH_RADIX_SORT_CUH
+#define NEWCUB_DEVICE_DISPATCH_DISPATCH_RADIX_SORT_CUH
 
 #include <stdio.h>
 #include <iterator>
@@ -1618,4 +1619,4 @@ struct DispatchSegmentedRadixSort :
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
-
+#endif // NEWCUB_DEVICE_DISPATCH_DISPATCH_RADIX_SORT_CUH

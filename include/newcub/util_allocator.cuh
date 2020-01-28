@@ -34,7 +34,8 @@
  * thread-safe and capable of managing device allocations on multiple devices.
  ******************************************************************************/
 
-#pragma once
+#ifndef NEWCUB_UTIL_ALLOCATOR_CUH
+#define NEWCUB_UTIL_ALLOCATOR_CUH
 
 #include <newcub/util_namespace.cuh>
 #include <newcub/util_debug.cuh>
@@ -709,3 +710,5 @@ struct CachingDeviceAllocator
 
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
+
+#endif // NEWCUB_UTIL_ALLOCATOR_CUH

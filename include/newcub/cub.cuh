@@ -34,7 +34,8 @@
  * CUB umbrella include file
  */
 
-#pragma once
+#ifndef NEWCUB_CUB_CUH
+#define NEWCUB_CUB_CUH
 
 
 // Block
@@ -96,3 +97,4 @@
 #include <newcub/util_ptx.cuh>
 #include <newcub/util_type.cuh>
 
+#endif // NEWCUB_CUB_CUH

@@ -34,7 +34,8 @@
  * Operations for reading linear tiles of data into the CUDA thread block.
  */
 
-#pragma once
+#ifndef NEWCUB_BLOCK_BLOCK_LOAD_CUH
+#define NEWCUB_BLOCK_BLOCK_LOAD_CUH
 
 #include <iterator>
 
@@ -1242,3 +1243,4 @@ public:
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_BLOCK_BLOCK_LOAD_CUH

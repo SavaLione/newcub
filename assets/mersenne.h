@@ -68,7 +68,10 @@
  Any feedback is very welcome.
  http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt.html
  email: m-mat @ math.sci.hiroshima-u.ac.jp (remove space)
- */
+*/
+
+#ifndef ASSETS_MERSENNE_H
+#define ASSETS_MERSENNE_H
 
 #include <stdio.h>
 
@@ -187,3 +190,5 @@ unsigned int genrand_int32(void)
 
 
 } // namespace mersenne
+
+#endif // ASSETS_MERSENNE_H

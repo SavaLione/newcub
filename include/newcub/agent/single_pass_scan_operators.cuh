@@ -34,7 +34,8 @@
  * Callback operator types for supplying BlockScan prefixes
  */
 
-#pragma once
+#ifndef NEWCUB_AGENT_SINGLE_PASS_SCAN_OPERATORS_CUH
+#define NEWCUB_AGENT_SINGLE_PASS_SCAN_OPERATORS_CUH
 
 #include <iterator>
 
@@ -816,3 +817,4 @@ struct TilePrefixCallbackOp
 }               // CUB namespace
 CUB_NS_POSTFIX  // Optional outer namespace(s)
 
+#endif // NEWCUB_AGENT_SINGLE_PASS_SCAN_OPERATORS_CUH
